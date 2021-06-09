@@ -13,6 +13,11 @@
 </head>
 
 <body>
+    <script src="https://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+    <script src="https://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+    <script src="https://static.robotwebtools.org/keyboardteleopjs/current/keyboardteleop.min.js"></script>
+    <script src="//yoannmoinet.github.io/nipplejs/javascripts/nipplejs.js"></script>
+    <script src="webui.js"></script>
 
     <!-- notification for small viewports and landscape oriented smartphones -->
     <div class="device-notification">
@@ -153,6 +158,21 @@
                                     <div id="down"><span class="rbtn btn-large cancel">Down</span></div>
 
                                 </div>
+                                <!-- live video stream embedding-->
+                                <div class="row my-4">
+                                    <div class="col d-flex justify-content-center">
+                                        <img src="" class="p-1 bg-dark" alt="" id="video" />
+                                    </div>
+                                </div>
+                                <!-- JOYSTICK -->
+                                <div class="row my-4">
+                                    <div class="col">
+                                        <div class="d-flex justify-content-center" style="width: 210px; height: 210px;">
+                                            <div id="joystick"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </li>
                         <!-- <li class="l-section section">
