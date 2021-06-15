@@ -1467,8 +1467,8 @@ body {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -1590,7 +1590,7 @@ body {
 .work-request--information .information-email,
 .work-request--information .information-text {
     position: relative;
-    width: 45%;
+    width: 40%;
     height: 50px;
     font-size: 30px;
     font-weight: 300
@@ -1651,7 +1651,7 @@ body {
     }
 }
 
-@media (max-width: 600px) and (max-width: 415px) {
+@media (max-width: 600px) and (max-width: 450px) {
     .work-request--options {
         -webkit-box-pack: justify;
         -webkit-justify-content: space-between;
@@ -1673,9 +1673,10 @@ body {
         margin-bottom: 30px
     }
     .work-request--information .information-name,
-    .work-request--information .information-email {
+    .work-request--information .information-email,
+    .work-request--information .information-text {
         height: 40px;
-        font-size: 24px
+        font-size: 24px;
     }
 }
 
@@ -1942,7 +1943,7 @@ body {
     top: 50%;
     left: 0px;
     transform: translateY(-50%);
-    background: url("assets/img/doubchevright.png");
+    /* background: url("assets/img/doubchevright.png"); */
 }
 
 #right {

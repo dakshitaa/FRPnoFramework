@@ -17,15 +17,15 @@
     <script src="https://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
     <script src="https://static.robotwebtools.org/keyboardteleopjs/current/keyboardteleop.min.js"></script>
     <script src="//yoannmoinet.github.io/nipplejs/javascripts/nipplejs.js"></script>
-    <script src="webui.js"></script>
+    <script src="assets/js/functions.js"></script>
 
     <!-- notification for small viewports and landscape oriented smartphones -->
     <div class="device-notification">
         <a class="device-notification--logo" href="#0">
             <img src="assets/img/logo.png" alt="Global">
-            <p>Global</p>
+            <p>Friendly Robotics Project</p>
         </a>
-        <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+        <p class="device-notification--message">FRP has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
     </div>
 
     <div class="perspective effect-rotate-left">
@@ -151,68 +151,70 @@
                 </a>
                                     <img src="assets/img/about-visual.png" alt="About Us">
                                 </div> -->
-                                <div class='bcontainer' id='rotateMode'>
+                                <!-- <div class='bcontainer' id='rotateMode'>
                                     <div id="left"><span class="rbtn btn-large cancel">Left</span></div>
                                     <div id="right"><span class="rbtn btn-large cancel">Right</span></div>
                                     <div id="up"><span class="rbtn btn-large cancel">Up</span></div>
                                     <div id="down"><span class="rbtn btn-large cancel">Down</span></div>
 
-                                </div>
+                                </div> -->
                                 <!-- live video stream embedding-->
                                 <div class="row my-4">
                                     <div class="col d-flex justify-content-center">
-                                        <img src="" class="p-1 bg-dark" alt="" id="video" />
+                                        <div class="iframe-container" style="overflow: hidden; padding-top: 50%; position: relative;">
+                                            <iframe allow="microphone; camera" style="border: 5; height: 80%; left: 0; position: absolute; top: 0; width: 80%;" src="https://us05web.zoom.us/j/87403900354?pwd=UnZBVWNhbGhFbGR1OFFBRVVpQW02QT09" frameborder="5" sandbox="allow-forms allow-scripts"></iframe>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- JOYSTICK -->
-                                <div class="row my-4">
-                                    <div class="col">
-                                        <div class="d-flex justify-content-center" style="width: 210px; height: 210px;">
-                                            <div id="joystick"></div>
+                                <div class="row my-4 ">
+                                    <div class="col ">
+                                        <div class="d-flex justify-content-center " style="width: 210px; height: 210px; ">
+                                            <div id="joystick "></div>
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
                         </li>
-                        <!-- <li class="l-section section">
-                            <div class="contact">
-                                <div class="contact--lockup">
-                                    <div class="modal">
-                                        <div class="modal--information">
+                        <!-- <li class="l-section section ">
+                            <div class="contact ">
+                                <div class="contact--lockup ">
+                                    <div class="modal ">
+                                        <div class="modal--information ">
                                             <p>Pawia 5, 31-154 Kraków, Poland</p>
-                                            <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
-                                            <a href="tel:+148126287560">+48 12 628 75 60</a>
+                                            <a href="mailto:ouremail@gmail.com ">ouremail@gmail.com</a>
+                                            <a href="tel:+148126287560 ">+48 12 628 75 60</a>
                                         </div>
-                                        <ul class="modal--options">
-                                            <li><a href="#0">Bēhance</a></li>
-                                            <li><a href="#0">dribbble</a></li>
-                                            <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
+                                        <ul class="modal--options ">
+                                            <li><a href="#0 ">Bēhance</a></li>
+                                            <li><a href="#0 ">dribbble</a></li>
+                                            <li><a href="mailto:ouremail@gmail.com ">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </li> -->
-                        <li class="l-section section">
-                            <div class="hire">
+                        <li class="l-section section ">
+                            <div class="hire ">
                                 <h2>Give us your feedback</h2>
                                 <!-- checkout formspree.io for easy form setup -->
-                                <form class="work-request">
-                                    <div class="work-request--information">
-                                        <div class="information-name">
-                                            <input id="name" type="text" spellcheck="false">
-                                            <label for="name">Name</label>
+                                <form>
+                                    <div class="work-request--information ">
+                                        <div class="information-name ">
+                                            <input id="name " type="text " spellcheck="false ">
+                                            <label for="name ">Name</label>
                                         </div>
-                                        <div class="information-email">
-                                            <input id="email" type="email" spellcheck="false">
-                                            <label for="email">Email</label>
+                                        <div class="information-email ">
+                                            <input id="email " type="email " spellcheck="false ">
+                                            <label for="email ">Email</label>
                                         </div>
-                                        <div class="information-text">
-                                            <input id="text" type="text" spellcheck="false">
-                                            <label for="text">Message</label>
+                                        <div class="information-text ">
+                                            <input id="text " type="text " spellcheck="false ">
+                                            <label for="text ">Message</label>
                                         </div>
                                     </div>
-                                    <input type="submit" value="Send Feedback">
+                                    <input type="submit " value="Send Feedback ">
                                 </form>
                             </div>
                         </li>
@@ -220,8 +222,8 @@
                 </div>
             </div>
         </div>
-        <ul class="outer-nav">
-            <li class="is-active">Home</li>
+        <ul class="outer-nav ">
+            <li class="is-active ">Home</li>
             <li>Tasks</li>
             <li>Control Room</li>
             <!-- <li>Contact</li> -->
@@ -229,11 +231,11 @@
         </ul>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js "></script>
     <script>
-        window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')
+        window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js "><\/script>')
     </script>
-    <script src="assets/js/functions-min.js"></script>
+    <script src="assets/js/functions-min.js "></script>
 </body>
 
 </html>
