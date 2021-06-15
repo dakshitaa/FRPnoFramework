@@ -69,10 +69,10 @@ function createJoystick() {
         // https://yoannmoinet.github.io/nipplejs/
         var options = {
             zone: joystickContainer,
-            position: { left: 70 + '%', top: 105 + 'px' },
+            position: { left: 90 + '%', top: 300 + 'px' },
             mode: 'static',
             size: 200,
-            color: '#000090',
+            color: 'rgb(238, 238, 238)',
             restJoystick: true
         };
         manager = nipplejs.create(options);
@@ -121,14 +121,15 @@ window.onload = function() {
 
     initVelocityPublisher();
     // get handle for video placeholder
-    video = document.getElementById('video');
+
     // Populate video source 
-    video.src = "http://" + robot_IP + ":8080/stream?topic=/camera/rgb/image_raw&type=mjpeg&quality=80";
-    video.onload = function() {
-        // joystick and keyboard controls will be available only when video is correctly loaded
-        createJoystick();
-        initTeleopKeyboard();
-    };
+
+
+    // joystick and keyboard controls will be available only when video is correctly loaded
+    createJoystick();
+    console.log("are u working??");
+    initTeleopKeyboard();
+
 }
 
 $(document).ready(function() {
