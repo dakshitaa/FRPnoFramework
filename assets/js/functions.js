@@ -116,7 +116,7 @@ window.onload = function() {
 
     // // Init handle for rosbridge_websocket
     ros = new ROSLIB.Ros({
-        url: "ws://" + robot_IP + ":9090"
+        url: "ws://0.tcp.ngrok.io:19851"
     });
 
     initVelocityPublisher();
